@@ -19,3 +19,86 @@
     line-height: 100px;
     text-shadow: 0 2px #989797;
 }
+
+body {
+    background-color: white;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.buttonBar {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.button6 {
+    background-color: white;
+    border-color: black;
+    border-width: 2px;
+    width: 100px;
+    height: 50px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-style: bold; 
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
+    cursor: pointer;
+    transition-duration: .4s;
+  }
+
+.button6:hover {
+    background-color: #DFFBF9;
+}   
+
+.selected{
+    transition-duration: .05s;
+    box-shadow: 2px 2px #666 inset;
+    background-color: #DFFBF9 !important; 
+}
+
+.button5 {
+    background-color: white;
+    border-color: black;
+    border-width: 2px;
+    width: 100px;
+    height: 50px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-style: bold; 
+    display: inline-block;
+    margin-left: 44px;
+    margin-right: 44px;
+    cursor: pointer;
+}
+
+.button5:hover {
+    background-color: #DFFBF9;
+}   
+
+.submit {
+    background-color: #DEDEDE;
+    border: none;
+    color: #717171;
+    font: Segoe UI;
+    font-weight: bold;
+    font-size: 75px;
+    width: 528px;
+    height: 138px;
+    display: inline-block;
+    margin-top: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.SubmitActive {
+    background-color: #9EFEF7;
+    color: #717171;
+}
