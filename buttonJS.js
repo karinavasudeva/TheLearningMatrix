@@ -12,12 +12,28 @@ function clearButtons(lineID) {
 function addtoev() {
     var bns = document.getElementsByTagName("button");
     for (i = 0; i < bns.length; i++) {
+      if(bns[i].id != "SubmitButton"){
       bns[i].addEventListener("click", function() {
         clearButtons(this.parentNode.id);
         this.classList.toggle("selected");
-        checkFilled(); });  
+        checkFilled(); });
+      }else{
+      bns[i].addEventListener("click", function() {
+        if(this.classList.contains('SubmitActive')){
+          infoPage();
+        }
+      });
+      }  
     }
   }
+
+function infoPage()
+{
+  sessionStorage.setItem("Taxonomy", selections[0]);
+  sessionStorage.setItem("Size", selections[1]);
+  sessionStorage.setItem("Collaboration", selections[2]);
+  window.location.href = "product.html";
+}
 
 function checkFilled() {
     var count = 0;
